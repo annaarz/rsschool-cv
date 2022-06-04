@@ -1,7 +1,7 @@
 # Anna Arzamastseva
 
 ## Contacts
-**Tel.:** +37529-698-38-63
+**Telegram:** AnnaArz
 **Email:** a.alekhna@gmail.com.
 
 ## Location
@@ -34,5 +34,23 @@ and others
 * IT & Technical specialist in small business
 * Teacher for teenagers (HTML&CSS)
 
+## Code Example
+```
+images.forEach((img, index) => {
+    
+    img.addEventListener('click', (e) => {
+        for(let img of images){
+            if (img != e.target){
+                img.classList.remove('active');
+            }
+        }
+        localStorage.activeImageIndex = index;
+        img.classList.add('active');
+        document.body.style.backgroundImage = `url(${img.getAttribute('src')})`
+    })
+
+})
+
+```
 ### English Level
 * A2-B1
