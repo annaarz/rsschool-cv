@@ -28,15 +28,13 @@ figure{
     margin:0;
 }
 
-main .container{ 
+.container{ 
     background-color: #fff;
 }
 
 header{
     background-color: rgb(255, 209, 124);
     margin-bottom: 30px;
-    position: fixed;
-    width: 100%;
 }
 h1, h2, h3{
     font-weight: 600;
@@ -104,7 +102,7 @@ section{
 }
 
 main{
-    padding: 70px 20px;
+    padding: 70px 0;
 }
 
 .contacts-wrapper > div:last-child{
