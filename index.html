@@ -1,13 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV</title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>RS School CV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>Anna Arzamastseva</h1>
+
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <h1>Frontend Developer CV</h1>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#contacts">Contacts</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#skills">Skills</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#projects">Code & Projects</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <figure class="name">
+                <img class="avatar" src="images/avatar.jpg" alt="Anna Arzamastseva">
+                <figcaption>Anna Arzamastseva</figcaption>
+            </figure>
+            <section id="contacts">
+                <div class="contacts-wrapper">
+                    <div>
+                        <h2>Contacts</h2>
+                        <ul>
+                            <li class="tel"><a href="tel:+375296983863">+375 29 698 38 63</a></li>
+                            <li class="email"><a href="mailto:a.alekhna@gmail.com">a.alekhna@gmail.com</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2>Location</h2>
+                        <p class="location">Minsk, Belarus</p>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h2>About</h2>
+                <p>I’m a pure humanities by education and lifestyle, but I interesting in web development, so I learned
+                    html
+                    and css by myself. Also I know some CMS and worked as freelance web master in different web
+                    projects.
+                    But my real dream and goal is to be a great JS Developer, so I’m here to reach this goal.</p>
+            </section>
+            <section id="skills">
+                <div class="skills-wrapper">
+                    <h2>Skills</h2>
+                    <div class="skills-columns">
+                        <div>
+                            <h3>Hard Skills</h3>
+                            <ul>
+                                <li>HTML5, CSS3, SCSS</li>
+                                <li>Responsive Layout</li>
+                                <li>Bootstrap Framework</li>
+                                <li>CMS Wordpress, Joomla</li>
+                                <li>Photoshop, Illustrator, Figma and others</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3>Soft Skills</h3>
+                            <ul>
+                                <li>Good teaching skill</li>
+                                <li>Good Self Education skill</li>
+                                <li>Friendly and non toxic</li>
+                                <li>Careful and responsible</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <section id="education">
+                <h2>Education</h2>
+                <p>BSU, philology</p>
+                <h2>Experience</h2>
+                <ul>
+                    <li>Freelance Web Master (working with CMS, hosting, HTML/CSS, basic JS )</li>
+                    <li>IT specialist in small business (responsive for website, CRM, payment system)</li>
+                </ul>
+                <h2>English Level</h2>
+                <ul>
+                    <li>EPAM test: B1, self-awareness: A2</li>
+                    <li>I'm not good in speaking language but I can read and understand documentation.</li>
+                </ul>
+            </section>
+
+            <section id="projects">
+                <h2>Example of my code</h2>
+                <div>
+                    <pre>
+                        <code class="js">
+    const vegetables = ['Капуста', 'Репа', 'Редиска', 'Морковка'];
+    function cloneArray(arr) {
+        return arr.map(veg => veg);
+    }
+                            
+    const newVegetables = arrayClone(vegetables);
+                            
+    console.log(newVegetables);
+                        </code>
+                    </pre>
+                </div>
+                <div class="projects-wrapper">
+                    <h2>My projects</h2>
+                    <div class="projects">
+                        <a href="https://ecolifelit.by/" target="_blank">
+                            <img src="images/ecolife.png" alt="">
+                            <h3>EcoLife</h3>
+                            <p>Website for a privat kindergarten</p>
+                            <p>Stack: Wordpress CMS</p>
+                        </a>
+                        <a href="https://os-nails.com/" target="_blank">
+                            <img src="images/os-nails.png" alt="">
+                            <h3>OS-Nails</h3>
+                            <p>Nail service equipment shop</p>
+                            <p>Stack: Wordpress CMS</p>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy;2021&nbsp; <a href="https://github.com/annaarz">Anna Arzamastseva</a></p>
+            <a href="https://rs.school/js/"><img src="https://rs.school/images/rs_school_js.svg" alt="rss"
+                    width="50"></a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+
 </body>
+
 </html>
