@@ -8,7 +8,7 @@
 Minsk, Belarus.
 
 ## About
-I'm a pure humanities by education and lifestyle, but I interesting in web development, so I learned html and css by myself. Also I know some CMS and worked as freelance web master in different web projects. But my real goal is to be a great JS Developer, so I'm here to reach this goal.
+I'm a pure humanities by education and lifestyle, but I interesting in web development, so I learned html, css and basic JS by myself. Also I know some CMS and worked as freelance web master in different web projects.
 
 ## Skills
 ### Hard Skills
@@ -16,6 +16,7 @@ I'm a pure humanities by education and lifestyle, but I interesting in web devel
 * Responsive Layout
 * Bootstrap Framework 
 * CMS Wordpress, Joomla
+* JavaScript
 * GIT
 * SEO
 * Photoshop, Illustrator, Figma
@@ -32,25 +33,28 @@ and others
 ## Experience
 * Freelance Web Master
 * IT & Technical specialist in small business
-* Teacher for teenagers (HTML&CSS)
+* Teacher for teenagers (HTML, CSS, JS)
 
 ## Code Example
 ```
-images.forEach((img, index) => {
-    
-    img.addEventListener('click', (e) => {
-        for(let img of images){
-            if (img != e.target){
-                img.classList.remove('active');
-            }
+const getUserInfo = async (userName) => {
+    try{
+        const response = await fetch(`https://api.github.com/users/${userName}`);
+        if(!response.ok){
+            throw new Error('Ошибка статус-кода')
         }
-        localStorage.activeImageIndex = index;
-        img.classList.add('active');
-        document.body.style.backgroundImage = `url(${img.getAttribute('src')})`
-    })
+        const data = await response.json();
+        console.log(data); 
+        const {avatar_url, id, login} = data;
 
-})
+        document.body.innerHTML += `<img src="${avatar_url}" alt="${login}"> `;
+    } catch (error){
+        console.error(error)
+    }
+}
+
+getUserInfo('it-bear');
 
 ```
 ### English Level
-* A2-B1
+* B1
